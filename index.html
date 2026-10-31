@@ -5,1131 +5,317 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SixteenMarket – Catalogue d'applications à télécharger et communauté</title>
 
+  <!-- Politique de sécurité du contenu : seuls ce site et le projet Supabase sont autorisés -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: https://txbvpddpsejtfjvixdfw.supabase.co; font-src 'self'; connect-src 'self' https://txbvpddpsejtfjvixdfw.supabase.co wss://txbvpddpsejtfjvixdfw.supabase.co; manifest-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
   <link rel="canonical" href="https://sixteenmarket.github.io/sixteenmarket/">
   <!-- Balise de vérification Google Search Console -->
   <meta name="google-site-verification" content="2VhcYexNEVpv9bPOUC2q0QY6xllimgFAcB1pTVAM-fc" />
 
   <meta name="description" content="SixteenMarket est un catalogue d'applications à télécharger, avec aperçus, fiches techniques et une communauté pour échanger.">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#EADFC2">
+
   <meta property="og:site_name" content="SixteenMarket">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="SixteenMarket – Catalogue d'applications et communauté">
   <meta property="og:description" content="16 lettres avant, une idée après. Découvre et télécharge des applications, rejoins la communauté.">
-  <meta property="og:type" content="website">
   <meta property="og:url" content="https://sixteenmarket.github.io/sixteenmarket/">
+  <meta property="og:image" content="https://sixteenmarket.github.io/sixteenmarket/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="SixteenMarket – 16 lettres avant, une idée après.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SixteenMarket – Catalogue d'applications et communauté">
+  <meta name="twitter:description" content="16 lettres avant, une idée après. Découvre et télécharge des applications, rejoins la communauté.">
+  <meta name="twitter:image" content="https://sixteenmarket.github.io/sixteenmarket/og-image.jpg">
+
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebSite","name":"SixteenMarket","alternateName":"Sixteen Market","url":"https://sixteenmarket.github.io/sixteenmarket/"}
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"WebSite","@id":"https://sixteenmarket.github.io/sixteenmarket/#site","name":"SixteenMarket","alternateName":"Sixteen Market","url":"https://sixteenmarket.github.io/sixteenmarket/","inLanguage":"fr","description":"Catalogue d'applications à télécharger, avec aperçus, fiches techniques et une communauté pour échanger."},
+    {"@type":"Organization","@id":"https://sixteenmarket.github.io/sixteenmarket/#org","name":"SixteenMarket","url":"https://sixteenmarket.github.io/sixteenmarket/","logo":"https://sixteenmarket.github.io/sixteenmarket/icon-512.png"}
+  ]}
   </script>
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Ccircle%20cx='32'%20cy='32'%20r='30'%20fill='%23EADFC2'%20stroke='%233E362C'%20stroke-width='2'/%3E%3Cellipse%20cx='23'%20cy='27'%20rx='15'%20ry='12'%20fill='%235FA898'%20opacity='0.88'/%3E%3Cellipse%20cx='42'%20cy='24'%20rx='13'%20ry='11'%20fill='%23E2896A'%20opacity='0.88'/%3E%3Cellipse%20cx='32'%20cy='43'%20rx='14'%20ry='11'%20fill='%23A784B0'%20opacity='0.88'/%3E%3C/svg%3E">
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Quicksand:wght@500;600;700&display=swap');
 
-  :root{
-    --paper:#EADFC2;
-    --paper-deep:#DCC9A0;
-    --ink:#3E362C;
-    --ink-soft:#6B6154;
-    --turquoise:#5FA898;
-    --turquoise-deep:#3F7C70;
-    --coral:#E2896A;
-    --coral-deep:#B85F45;
-    --violet:#A784B0;
-    --violet-deep:#7C5A87;
-    --amber:#E3AC44;
-    --amber-deep:#B37F26;
-  }
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Quicksand',sans-serif;
-    font-weight:500;
-    line-height:1.6;
-    overflow-x:hidden;
-  }
-  body::before{
-    content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.35;mix-blend-mode:multiply;
-    background-image:
-      radial-gradient(circle at 20% 30%, rgba(216,199,156,.5) 0, transparent 40%),
-      radial-gradient(circle at 80% 10%, rgba(216,199,156,.4) 0, transparent 35%),
-      radial-gradient(circle at 60% 80%, rgba(216,199,156,.5) 0, transparent 45%),
-      repeating-linear-gradient(0deg, rgba(62,54,44,.03) 0px, transparent 1px, transparent 2px, rgba(62,54,44,.03) 3px);
-  }
-  .grain-layer{position:fixed;inset:0;z-index:1;pointer-events:none;filter:url(#grain);opacity:.45;mix-blend-mode:multiply;}
-  body::after{
-    content:"";position:fixed;inset:0;pointer-events:none;z-index:1;
-    background:radial-gradient(ellipse at center, transparent 40%, rgba(140,115,69,.4) 100%);
-  }
-
-  h1,h2,h3{font-family:'Caveat',cursive;font-weight:700;margin:0;color:var(--ink);}
-  :focus-visible{outline:3px solid var(--amber-deep);outline-offset:2px;}
-  [hidden]{display:none !important;}
-
-  /* ---------- transition overlay ---------- */
-  .page-transition{position:fixed;inset:0;z-index:9990;pointer-events:none;opacity:0;}
-  .page-transition svg{position:absolute;top:0;left:-15%;width:130%;height:100%;transform:translateX(-115%);}
-  .page-transition path{fill:var(--turquoise-deep);}
-
-  /* ---------- nav ---------- */
-  .topnav{
-    position:sticky;top:0;z-index:50;
-    display:flex;align-items:center;justify-content:space-between;gap:1rem;
-    padding:.9rem 1.5rem;background:var(--paper);border-bottom:2px solid var(--paper-deep);flex-wrap:wrap;
-  }
-  .brand{font-family:'Caveat',cursive;font-weight:700;font-size:1.6rem;}
-  .nav-links{display:flex;gap:1.4rem;flex-wrap:wrap;}
-  .nav-link{
-    background:none;border:none;cursor:pointer;font-family:'Quicksand',sans-serif;font-weight:600;
-    font-size:.95rem;color:var(--ink-soft);padding:.3rem .1rem;position:relative;
-  }
-  .nav-link::after{
-    content:"";position:absolute;left:0;bottom:-4px;height:3px;width:100%;background:var(--coral-deep);
-    transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.5,0,.25,1);border-radius:3px;
-  }
-  .nav-link:hover::after,.nav-link.active::after{transform:scaleX(1);}
-  .nav-link.active{color:var(--ink);}
-  .nav-auth{display:flex;align-items:center;gap:.8rem;font-size:.85rem;color:var(--ink-soft);}
-  .nav-auth a{color:var(--ink-soft);}
-
-  /* ---------- screens ---------- */
-  .screen{display:none;position:relative;padding:3.5rem 1.5rem 5rem;max-width:1080px;margin:0 auto;}
-  .screen.active{display:block;}
-  .screen-title{font-size:2.4rem;margin-bottom:1.2rem;}
-
-  /* ---------- hero (accueil) ---------- */
-  .hero{text-align:center;padding-top:2rem;position:relative;}
-  .tape{position:absolute;top:-10px;left:calc(50% - 220px);width:90px;height:34px;background:rgba(227,172,68,.55);border:1px solid rgba(179,127,38,.4);transform:rotate(-8deg);box-shadow:0 2px 4px rgba(62,54,44,.15);}
-  .blob-wrap{position:absolute;inset:0;pointer-events:none;will-change:transform;}
-  .blob{position:absolute;border-radius:42% 58% 63% 37% / 41% 44% 56% 59%;opacity:.55;mix-blend-mode:multiply;animation:float 13s ease-in-out infinite;}
-  .blob.b1{width:180px;height:150px;background:var(--turquoise);top:-30px;left:8%;animation-delay:0s;}
-  .blob.b2{width:150px;height:170px;background:var(--coral);top:40px;right:6%;animation-delay:1.4s;}
-  .blob.b3{width:120px;height:110px;background:var(--violet);bottom:-40px;left:38%;animation-delay:2.8s;}
-  .blob.accent{opacity:.28;}
-  .blob.b4{width:70px;height:60px;background:var(--amber);top:6px;right:6%;animation-delay:.6s;}
-  .blob.b5{width:80px;height:70px;background:var(--violet);top:0;left:4%;animation-delay:1.8s;}
-  .deco{position:absolute;opacity:.25;mix-blend-mode:multiply;pointer-events:none;animation:float 13s ease-in-out infinite;}
-  .deco.oval{border-radius:50%;}
-  .deco.square{border-radius:16%;}
-  .deco.rect{border-radius:12%;}
-  @keyframes float{
-    0%{transform:translate(0,0) rotate(0deg) scale(1);}
-    30%{transform:translate(9px,-13px) rotate(4deg) scale(1.03);}
-    62%{transform:translate(-7px,-5px) rotate(-3deg) scale(.98);}
-    100%{transform:translate(0,0) rotate(0deg) scale(1);}
-  }
-  .wordmark{font-size:clamp(3rem,9vw,5.5rem);position:relative;display:inline-block;}
-  .brush-underline{display:block;margin:.2rem auto 1.2rem;width:min(420px,80%);}
-  .brush-underline path{fill:none;stroke:var(--coral-deep);stroke-width:8;stroke-linecap:round;stroke-dasharray:600;stroke-dashoffset:600;animation:draw 1.6s ease-out .3s forwards;}
-  @keyframes draw{ to{ stroke-dashoffset:0; } }
-  .slogan{font-family:'Caveat',cursive;font-size:1.6rem;color:var(--ink-soft);font-weight:600;}
-
-  .worlds{display:flex;gap:2rem;flex-wrap:wrap;justify-content:center;padding-top:2.5rem;position:relative;}
-  .card{
-    background:var(--paper-deep);width:260px;padding:1.6rem 1.4rem 1.8rem;border:none;font:inherit;text-align:left;cursor:pointer;
-    clip-path:polygon(2% 4%,97% 0%,100% 96%,4% 100%);box-shadow:4px 6px 0 rgba(62,54,44,.08);
-    transition:transform .5s cubic-bezier(.34,1.4,.4,1), box-shadow .5s ease, opacity .6s ease;
-  }
-  .card:nth-child(1){transform:rotate(-2.5deg);}
-  .card:nth-child(2){transform:rotate(1.5deg);}
-  .card:nth-child(3){transform:rotate(-1deg);}
-  .card:hover{transform:rotate(0deg) translateY(-6px);box-shadow:6px 10px 0 rgba(62,54,44,.12);}
-  .card h3{font-size:1.8rem;margin-bottom:.4rem;}
-  .card p{font-size:.92rem;color:var(--ink-soft);margin:0;}
-  .card.apps{border-left:6px solid var(--turquoise-deep);}
-  .card.comm{border-left:6px solid var(--coral-deep);}
-  .card.port{border-left:6px solid var(--violet-deep);}
-
-  /* ---------- apps grid & fiche ---------- */
-  .search-input{width:100%;max-width:360px;padding:.6rem 1rem;margin-bottom:2rem;border:2px solid var(--paper-deep);border-radius:20px;font-family:'Quicksand',sans-serif;background:var(--paper);color:var(--ink);}
-  .search-input:focus{outline:none;border-color:var(--turquoise-deep);}
-  .apps-grid{display:flex;flex-direction:column;gap:1rem;position:relative;z-index:2;}
-  .app-tile{
-    background:var(--paper-deep);padding:1rem;cursor:pointer;border:none;font:inherit;text-align:left;width:100%;
-    display:flex;align-items:center;gap:1rem;
-    clip-path:polygon(2% 3%,98% 0%,100% 97%,0% 100%);box-shadow:4px 6px 0 rgba(62,54,44,.08);
-    transition:transform .4s cubic-bezier(.34,1.4,.4,1), box-shadow .4s ease;
-  }
-  .app-tile:hover{transform:translateY(-4px);box-shadow:6px 9px 0 rgba(62,54,44,.12);}
-  .app-icon{width:58px;height:58px;flex:none;border-radius:28% 32% 30% 34%/32% 28% 34% 30%;}
-  .app-info h3{font-size:1.25rem;margin-bottom:.2rem;}
-  .app-info p{font-size:.85rem;color:var(--ink-soft);margin:0;}
-  .thumb{width:100%;height:110px;border-radius:18% 25% 20% 30%/25% 18% 30% 20%;margin-bottom:.8rem;}
-  .meta-row{font-size:.75rem;color:var(--ink-soft);display:flex;gap:.5rem;flex-wrap:wrap;}
-  .back-link{background:none;border:none;color:var(--ink-soft);font-family:'Quicksand',sans-serif;font-weight:600;cursor:pointer;margin-bottom:1.5rem;padding:0;font-size:.9rem;}
-  .fiche-card{background:var(--paper-deep);max-width:560px;padding:2rem;clip-path:polygon(1.5% 2%,98% 0%,100% 97%,2% 100%);box-shadow:5px 8px 0 rgba(62,54,44,.1);position:relative;z-index:2;}
-  .thumb-big{width:100%;height:180px;border-radius:6% 10% 8% 12%/10% 6% 12% 8%;margin-bottom:1.2rem;}
-  .screenshots-row{display:flex;gap:.6rem;margin-bottom:1rem;}
-  .ss-viewer{position:relative;width:100%;height:220px;border-radius:6% 10% 8% 12%/10% 6% 12% 8%;overflow:hidden;margin-bottom:.6rem;background:var(--paper-deep);}
-  .ss-main{width:100%;height:100%;background-size:cover;background-position:center;}
-  .ss-nav{
-    position:absolute;top:50%;transform:translateY(-50%);
-    background:rgba(62,54,44,.55);color:var(--paper);border:none;
-    width:2.2rem;height:2.2rem;border-radius:50%;font-size:1.2rem;line-height:1;cursor:pointer;
-  }
-  .ss-prev{left:.6rem;}
-  .ss-next{right:.6rem;}
-  .ss-dots{display:flex;gap:.4rem;justify-content:center;margin-bottom:1rem;}
-  .ss-dot{width:8px;height:8px;border-radius:50%;background:var(--paper-deep);cursor:pointer;border:none;padding:0;}
-  .ss-dot.active{background:var(--coral-deep);}
-  .screenshot{flex:1;height:90px;border-radius:8% 12% 10% 14%/10% 8% 14% 12%;}
-  .fiche-desc{color:var(--ink-soft);margin:.6rem 0 1rem;}
-  .dl-row{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;}
-  .dl-btn{display:inline-block;background:var(--coral-deep);color:var(--paper);border:none;font-family:'Quicksand',sans-serif;font-weight:700;font-size:.95rem;padding:.6rem 1.3rem;border-radius:40px 10px 40px 10px;cursor:pointer;text-decoration:none;transition:transform .25s cubic-bezier(.34,1.56,.64,1);}
-  .dl-btn:hover{transform:translateY(-3px) rotate(-1deg);}
-  .dl-btn:active{transform:translateY(0) scale(.97);}
-  .dl-count{font-size:.85rem;color:var(--ink-soft);}
-
-  /* ---------- communauté ---------- */
-  .cta-btn{background:none;border:2px solid var(--ink);color:var(--ink);font-family:'Quicksand',sans-serif;font-weight:600;padding:.6rem 1.4rem;border-radius:30px;cursor:pointer;margin-top:1rem;}
-  .chat-layout{display:flex;gap:2rem;flex-wrap:wrap;align-items:flex-start;}
-  .chat-main{flex:1;min-width:280px;max-width:640px;}
-  .chat-messages{max-height:320px;overflow-y:auto;display:flex;flex-direction:column;gap:.6rem;padding:.8rem;background:var(--paper-deep);clip-path:polygon(1.5% 2%,98% 0%,100% 97%,2% 100%);margin-bottom:.8rem;}
-  .chat-bubble{background:var(--paper);padding:.5rem .8rem;border-radius:14px;font-size:.9rem;}
-  .chat-bubble strong{color:var(--turquoise-deep);margin-right:.4rem;}
-  .chat-form{display:flex;gap:.6rem;}
-  .chat-form input{flex:1;padding:.5rem .9rem;border:2px solid var(--paper-deep);border-radius:20px;font-family:'Quicksand',sans-serif;background:var(--paper);color:var(--ink);}
-
-  /* ---------- auth ---------- */
-  .auth-tabs{display:flex;gap:.6rem;margin-bottom:1.4rem;position:relative;z-index:2;}
-  .auth-tab{background:none;border:2px solid var(--paper-deep);color:var(--ink-soft);font-family:'Quicksand',sans-serif;font-weight:600;padding:.45rem 1.1rem;border-radius:20px;cursor:pointer;}
-  .auth-tab.active{background:var(--ink);border-color:var(--ink);color:var(--paper);}
-  .auth-form{display:flex;flex-direction:column;gap:1rem;max-width:340px;position:relative;z-index:2;}
-  .auth-form label{display:flex;flex-direction:column;gap:.3rem;font-size:.9rem;color:var(--ink-soft);}
-  .auth-form input[type=text],.auth-form input[type=email],.auth-form input[type=password]{padding:.5rem .8rem;border:2px solid var(--paper-deep);border-radius:14px;font-family:'Quicksand',sans-serif;background:var(--paper);color:var(--ink);}
-  .form-note{font-size:.8rem;color:var(--ink-soft);margin-top:1rem;font-style:italic;}
-  .pw-strength{font-size:.78rem;margin:-.6rem 0 0;min-height:1em;}
-  .pw-strength.weak{color:var(--coral-deep);}
-  .pw-strength.medium{color:var(--amber-deep);}
-  .pw-strength.strong{color:var(--turquoise-deep);}
-  .pw-field{position:relative;}
-  .pw-field input{width:100%;padding-right:4.4rem;}
-  .pw-toggle{
-    position:absolute;right:.4rem;top:50%;transform:translateY(-50%);
-    background:none;border:none;cursor:pointer;font-size:.75rem;font-weight:600;
-    padding:.3rem .5rem;color:var(--ink-soft);font-family:'Quicksand',sans-serif;
-  }
-  .cookie-banner{
-    position:fixed;bottom:0;left:0;right:0;z-index:9995;
-    background:var(--ink);color:var(--paper);
-    padding:.9rem 1.5rem;display:flex;align-items:center;justify-content:center;gap:1.2rem;flex-wrap:wrap;
-  }
-  .cookie-banner p{margin:0;font-size:.85rem;max-width:640px;}
-  .cookie-banner .cookie-actions{display:flex;gap:.6rem;flex:none;}
-  .cookie-banner .cookie-actions button{flex:none;}
-  .cookie-decline{background:none;border:2px solid var(--paper);color:var(--paper);font-family:'Quicksand',sans-serif;font-weight:600;padding:.55rem 1.2rem;border-radius:40px 10px 40px 10px;cursor:pointer;}
-
-  /* ---------- admin ---------- */
-  .admin-block{margin-bottom:2.4rem;}
-  .admin-form{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1rem;}
-  .admin-form input{padding:.5rem .8rem;border:2px solid var(--paper-deep);border-radius:14px;font-family:'Quicksand',sans-serif;background:var(--paper);color:var(--ink);flex:1;min-width:140px;}
-  .file-field{display:flex;flex-direction:column;gap:.3rem;font-size:.8rem;color:var(--ink-soft);flex:1;min-width:200px;}
-  .file-field input[type=file]{padding:.3rem;border:none;font-family:'Quicksand',sans-serif;font-size:.82rem;color:var(--ink);}
-  .admin-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem;}
-  .admin-list li{background:var(--paper-deep);padding:.6rem .9rem;border-radius:10px;display:flex;justify-content:space-between;align-items:center;gap:.6rem;flex-wrap:wrap;font-size:.88rem;}
-  .mini-btn{background:var(--paper);border:1px solid var(--ink-soft);border-radius:14px;padding:.25rem .7rem;font-size:.78rem;cursor:pointer;color:var(--ink);}
-  .mini-btn.danger{border-color:var(--coral-deep);color:var(--coral-deep);}
-
-  /* ---------- footer ---------- */
-  footer{display:flex;flex-direction:column;align-items:center;gap:.5rem;text-align:center;padding:3rem 1.5rem 4rem;position:relative;z-index:2;}
-  .slogan-draw{display:inline-block;font-family:'Caveat',cursive;font-size:1.3rem;color:var(--ink-soft);clip-path:inset(0 100% 0 0);transition:clip-path 1.4s cubic-bezier(.4,0,.2,1);}
-  .slogan-draw.drawn{clip-path:inset(0 0% 0 0);}
-
-  @media (max-width:600px){ .fiche-card{padding:1.4rem;} }
-
-  @media (prefers-reduced-motion:reduce){
-    .blob,.deco{animation:none;}
-    .brush-underline path{animation:none;stroke-dashoffset:0;}
-    .slogan-draw{transition:none;clip-path:inset(0 0% 0 0);}
-  }
-</style>
+  <link rel="preload" href="fonts/caveat-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/quicksand-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css?v=3">
+  <script src="vendor/supabase.js?v=2.118.0" defer></script>
+  <script src="app.js?v=3" defer></script>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute;" aria-hidden="true">
-  <filter id="grain">
-    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="7" stitchTiles="stitch" result="n"/>
-    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.35 0"/>
-  </filter>
-</svg>
-<div class="grain-layer"></div>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<noscript><div class="noscript">SixteenMarket a besoin de JavaScript pour afficher le catalogue et la communauté. Active-le dans ton navigateur, puis recharge la page. Informations légales : <a href="mentions-legales.html">mentions légales</a>, <a href="confidentialite.html">confidentialité</a>.</div></noscript>
 
-<div class="page-transition" id="pageTransition">
-  <svg viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true">
+<div class="grain-layer" aria-hidden="true"></div>
+
+<div class="page-transition" id="pageTransition" aria-hidden="true">
+  <svg viewBox="0 0 600 200" preserveAspectRatio="none" focusable="false">
     <path d="M-20,-4 C40,4 90,-8 150,2 C210,8 260,-4 320,4 C380,-6 430,6 490,-2 C540,4 580,-6 620,2 L620,198 C580,206 540,194 490,204 C430,196 380,206 320,196 C260,204 210,194 150,206 C90,196 40,204 -20,198 Z"/>
   </svg>
 </div>
 
-<nav class="topnav">
-  <div class="brand">SixteenMarket</div>
+<nav class="topnav" aria-label="Navigation principale">
+  <a class="brand" href="#/">SixteenMarket</a>
   <div class="nav-links">
-    <button class="nav-link active" data-screen="accueil">Accueil</button>
-    <button class="nav-link" data-screen="apps">Apps</button>
-    <button class="nav-link" data-screen="communaute">Communauté</button>
-    <button class="nav-link" data-screen="admin" id="adminNavLink" hidden>Admin</button>
+    <a class="nav-link active" href="#/" data-nav="accueil">Accueil</a>
+    <a class="nav-link" href="#/apps" data-nav="apps">Apps</a>
+    <a class="nav-link" href="#/communaute" data-nav="communaute">Communauté</a>
+    <a class="nav-link" href="#/admin" data-nav="admin" id="adminNavLink" hidden>Admin</a>
   </div>
   <div class="nav-auth">
-    <button class="nav-link" data-screen="connexion" id="authNavLink">Connexion</button>
-    <span class="nav-user" id="navUser" hidden></span>
+    <a class="nav-link" href="#/connexion" data-nav="connexion" id="authNavLink">Connexion</a>
+    <span class="nav-user" id="navUser" hidden>
+      <a href="#/compte" id="navUserPseudo" data-nav="compte"></a><span class="sep"> · </span><a href="#/" id="logoutLink">Déconnexion</a>
+    </span>
   </div>
 </nav>
 
+<main id="main" tabindex="-1">
+
 <section class="screen active" id="screen-accueil">
   <div class="hero">
-    <div class="tape"></div>
-    <div class="blob-wrap" data-depth="0.12"><div class="blob b1"></div></div>
-    <div class="blob-wrap" data-depth="0.08"><div class="blob b2"></div></div>
-    <div class="blob-wrap" data-depth="0.16"><div class="blob b3"></div></div>
-    <h1 class="wordmark">SixteenMarket</h1>
-    <svg class="brush-underline" viewBox="0 0 400 30">
+    <div class="tape" aria-hidden="true"></div>
+    <div class="blob-wrap" data-depth="0.12" aria-hidden="true"><div class="blob b1"></div></div>
+    <div class="blob-wrap" data-depth="0.08" aria-hidden="true"><div class="blob b2"></div></div>
+    <div class="blob-wrap" data-depth="0.16" aria-hidden="true"><div class="blob b3"></div></div>
+    <h1 class="wordmark" id="t-accueil" tabindex="-1">SixteenMarket</h1>
+    <svg class="brush-underline" viewBox="0 0 400 30" aria-hidden="true" focusable="false">
       <path d="M10 18 C 100 4, 300 28, 390 12" />
     </svg>
   </div>
   <div class="worlds">
-    <button class="card apps" data-screen="apps">
-      <h3>Apps</h3>
+    <a class="card apps" href="#/apps">
+      <h2>Apps</h2>
       <p>Télécharge les applications, avec aperçus, fiches techniques et compteur de téléchargements.</p>
-    </button>
-    <button class="card comm" data-screen="communaute">
-      <h3>Communauté</h3>
+    </a>
+    <a class="card comm" href="#/communaute">
+      <h2>Communauté</h2>
       <p>Salle de discussion globale — connexion requise.</p>
-    </button>
+    </a>
   </div>
-  <div class="deco oval" style="width:70px;height:46px;background:var(--violet);bottom:-10px;left:6%;animation-delay:.9s;"></div>
-  <div class="deco square" style="width:44px;height:44px;background:var(--amber);bottom:20px;right:8%;animation-delay:2.1s;"></div>
+  <section class="latest" id="latestApps" aria-labelledby="latestTitle" hidden>
+    <h2 id="latestTitle">Dernières apps</h2>
+    <div class="apps-grid" id="latestGrid"></div>
+    <a class="more" href="#/apps">Voir toutes les apps →</a>
+  </section>
+  <div class="deco oval dx1" aria-hidden="true"></div>
+  <div class="deco square dx2" aria-hidden="true"></div>
 </section>
 
 <section class="screen" id="screen-apps">
-  <div class="blob accent b4"></div>
-  <div class="deco rect" style="width:60px;height:34px;background:var(--turquoise);bottom:30px;left:4%;animation-delay:1.2s;"></div>
-  <div class="deco oval" style="width:50px;height:36px;background:var(--coral);top:120px;right:5%;animation-delay:2.4s;"></div>
-  <h2 class="screen-title">Apps</h2>
-  <input type="search" id="appSearch" class="search-input" placeholder="Rechercher une app…">
-  <div class="apps-grid" id="appsGrid"></div>
+  <div class="blob accent b4" aria-hidden="true"></div>
+  <div class="deco rect dx3" aria-hidden="true"></div>
+  <div class="deco oval dx4" aria-hidden="true"></div>
+  <h1 class="screen-title" id="t-apps" tabindex="-1">Apps</h1>
+  <label class="sr-only" for="appSearch">Rechercher une app</label>
+  <input type="search" id="appSearch" class="search-input" placeholder="Rechercher une app…" autocomplete="off">
+  <div class="apps-grid" id="appsGrid" aria-live="polite"></div>
 </section>
 
 <section class="screen" id="screen-fiche">
-  <div class="deco square" style="width:46px;height:46px;background:var(--violet);top:10px;left:2%;animation-delay:.3s;"></div>
-  <div class="deco oval" style="width:60px;height:40px;background:var(--amber);bottom:10px;right:4%;animation-delay:1.7s;"></div>
-  <button class="back-link" data-screen="apps">← Retour aux apps</button>
+  <div class="deco square dx5" aria-hidden="true"></div>
+  <div class="deco oval dx6" aria-hidden="true"></div>
+  <a class="back-link" href="#/apps">← Retour aux apps</a>
   <div class="fiche-card" id="ficheContent"></div>
 </section>
 
 <section class="screen" id="screen-communaute">
-  <div class="deco oval" style="width:56px;height:40px;background:var(--amber);top:8px;right:5%;animation-delay:1.1s;"></div>
-  <div class="deco square" style="width:40px;height:40px;background:var(--violet);bottom:16px;left:5%;animation-delay:2.6s;"></div>
-  <div id="communauteLocked">
-    <h2 class="screen-title">Communauté</h2>
-    <p>Connecte-toi pour rejoindre la discussion et échanger avec les autres membres.</p>
-    <button class="cta-btn" data-screen="connexion" data-redirect="communaute">Se connecter</button>
-  </div>
-  <div id="communauteUnlocked" hidden>
-    <h2 class="screen-title">Salle globale</h2>
-    <div class="chat-layout">
-      <div class="chat-main">
-        <div class="chat-messages" id="chatMessages"></div>
-        <form class="chat-form" id="chatForm">
-          <input type="text" id="chatInput" placeholder="Écris un message…" autocomplete="off" maxlength="500">
-          <button type="submit" class="dl-btn">Envoyer</button>
-        </form>
-      </div>
+  <div class="deco oval dx7" aria-hidden="true"></div>
+  <div class="deco square dx8" aria-hidden="true"></div>
+  <h1 class="screen-title" id="t-communaute" tabindex="-1">Salle globale</h1>
+  <p class="muted lead">Reste respectueux : les règles sont dans les <a href="cgu.html">conditions d'utilisation</a>. Les messages sont visibles par tous les membres connectés.</p>
+  <div class="chat-layout">
+    <div class="chat-main">
+      <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-label="Messages de la salle globale" tabindex="0"></div>
+      <form class="chat-form" id="chatForm">
+        <label class="sr-only" for="chatInput">Ton message</label>
+        <input type="text" id="chatInput" placeholder="Écris un message…" autocomplete="off" maxlength="500">
+        <button type="submit" class="dl-btn" id="chatSend">Envoyer</button>
+      </form>
+      <p class="chat-count" id="chatCount" aria-hidden="true">0 / 500</p>
     </div>
   </div>
 </section>
 
-<section class="screen" id="screen-parametres">
-  <div class="deco square" style="width:42px;height:42px;background:var(--violet);top:8px;right:5%;animation-delay:.7s;"></div>
-  <div class="deco oval" style="width:52px;height:36px;background:var(--turquoise);bottom:14px;left:4%;animation-delay:2.2s;"></div>
-  <div id="parametresLocked">
-    <h2 class="screen-title">Mon compte</h2>
-    <p>Connecte-toi pour gérer ton compte.</p>
-    <button class="cta-btn" data-screen="connexion" data-redirect="parametres">Se connecter</button>
+<section class="screen" id="screen-compte">
+  <div class="deco square dx9" aria-hidden="true"></div>
+  <div class="deco oval dx10" aria-hidden="true"></div>
+  <h1 class="screen-title" id="t-compte" tabindex="-1">Mon compte</h1>
+  <p class="form-note">Connecté avec <strong id="settingsEmail"></strong></p>
+
+  <form class="auth-form" id="pseudoForm">
+    <label>Pseudo<input type="text" id="settingsPseudo" maxlength="24" autocomplete="nickname"></label>
+    <button type="submit" class="dl-btn">Mettre à jour le pseudo</button>
+  </form>
+
+  <form class="auth-form" id="passwordForm">
+    <label>Ancien mot de passe
+      <div class="pw-field"><input type="password" id="settingsOldPassword" required autocomplete="current-password"><button type="button" class="pw-toggle" data-target="settingsOldPassword" aria-label="Afficher le mot de passe">Afficher</button></div>
+    </label>
+    <label>Nouveau mot de passe
+      <div class="pw-field"><input type="password" id="settingsPassword" required autocomplete="new-password"><button type="button" class="pw-toggle" data-target="settingsPassword" aria-label="Afficher le mot de passe">Afficher</button></div>
+    </label>
+    <p class="pw-strength" id="settingsPwStrength" aria-live="polite"></p>
+    <label>Confirmer le nouveau mot de passe
+      <div class="pw-field"><input type="password" id="settingsPasswordConfirm" required autocomplete="new-password"><button type="button" class="pw-toggle" data-target="settingsPasswordConfirm" aria-label="Afficher le mot de passe">Afficher</button></div>
+    </label>
+    <button type="submit" class="dl-btn">Changer le mot de passe</button>
+  </form>
+  <p class="form-note" id="settingsNote" role="status" aria-live="polite"></p>
+
+  <div class="sub-block">
+    <h2>Mes données</h2>
+    <p class="form-note">Tu peux télécharger une copie de tes données (compte et messages) au format JSON. Détails dans la <a href="confidentialite.html">politique de confidentialité</a>.</p>
+    <button type="button" class="ghost-btn" id="exportDataBtn">Télécharger mes données</button>
   </div>
-  <div id="parametresUnlocked" hidden>
-    <h2 class="screen-title">Mon compte</h2>
-    <p class="form-note">Connecté avec <strong id="settingsEmail"></strong></p>
-    <form class="auth-form" id="pseudoForm">
-      <label>Pseudo<input type="text" id="settingsPseudo" maxlength="24"></label>
-      <button type="submit" class="dl-btn">Mettre à jour le pseudo</button>
+
+  <div class="sub-block admin-block">
+    <h2>Supprimer mon compte</h2>
+    <p class="form-note">Action définitive et irréversible : ton compte et tes messages sont effacés.</p>
+    <form class="auth-form" id="deleteAccountForm">
+      <label>Confirme avec ton mot de passe
+        <div class="pw-field"><input type="password" id="deleteAccountPassword" required autocomplete="current-password"><button type="button" class="pw-toggle" data-target="deleteAccountPassword" aria-label="Afficher le mot de passe">Afficher</button></div>
+      </label>
+      <button type="submit" class="mini-btn danger">Supprimer définitivement mon compte</button>
     </form>
-    <form class="auth-form" id="passwordForm">
-      <label>Ancien mot de passe
-        <div class="pw-field"><input type="password" id="settingsOldPassword" required><button type="button" class="pw-toggle" data-target="settingsOldPassword">Afficher</button></div>
-      </label>
-      <label>Nouveau mot de passe
-        <div class="pw-field"><input type="password" id="settingsPassword" minlength="8" required><button type="button" class="pw-toggle" data-target="settingsPassword">Afficher</button></div>
-      </label>
-      <p class="pw-strength" id="settingsPwStrength"></p>
-      <label>Confirmer le nouveau mot de passe
-        <div class="pw-field"><input type="password" id="settingsPasswordConfirm" minlength="8" required><button type="button" class="pw-toggle" data-target="settingsPasswordConfirm">Afficher</button></div>
-      </label>
-      <button type="submit" class="dl-btn">Changer le mot de passe</button>
-    </form>
-    <p class="form-note" id="settingsNote"></p>
-    <div class="admin-block">
-      <h3>Supprimer mon compte</h3>
-      <p class="form-note">Action définitive et irréversible.</p>
-      <form class="auth-form" id="deleteAccountForm">
-        <label>Confirme avec ton mot de passe
-          <div class="pw-field"><input type="password" id="deleteAccountPassword" required><button type="button" class="pw-toggle" data-target="deleteAccountPassword">Afficher</button></div>
-        </label>
-        <button type="submit" class="mini-btn danger">Supprimer définitivement mon compte</button>
-      </form>
-    </div>
   </div>
 </section>
 
 <section class="screen" id="screen-connexion">
-  <div class="deco rect" style="width:56px;height:32px;background:var(--turquoise);top:6px;right:6%;animation-delay:.5s;"></div>
-  <div class="deco oval" style="width:46px;height:46px;background:var(--coral);bottom:14px;left:4%;animation-delay:1.9s;"></div>
-  <h2 class="screen-title">Connexion</h2>
-  <div class="auth-tabs">
-    <button type="button" class="auth-tab active" data-auth-mode="login">Se connecter</button>
-    <button type="button" class="auth-tab" data-auth-mode="signup">Créer un compte</button>
+  <div class="deco rect dx11" aria-hidden="true"></div>
+  <div class="deco oval dx12" aria-hidden="true"></div>
+  <h1 class="screen-title" id="t-connexion" tabindex="-1">Connexion</h1>
+  <div class="auth-tabs" role="group" aria-label="Choisir entre connexion et création de compte">
+    <button type="button" class="auth-tab active" data-auth-mode="login" aria-pressed="true">Se connecter</button>
+    <button type="button" class="auth-tab" data-auth-mode="signup" aria-pressed="false">Créer un compte</button>
   </div>
   <form class="auth-form" id="authForm">
-    <label id="pseudoField" hidden>Pseudo<input type="text" id="authPseudo" maxlength="24"></label>
-    <label>Email<input type="email" id="authEmail" required></label>
+    <label id="pseudoField" hidden>Pseudo<input type="text" id="authPseudo" maxlength="24" autocomplete="nickname"></label>
+    <label>Email<input type="email" id="authEmail" required autocomplete="email" inputmode="email"></label>
     <label>Mot de passe
-      <div class="pw-field"><input type="password" id="authPassword" required minlength="8"><button type="button" class="pw-toggle" data-target="authPassword">Afficher</button></div>
+      <div class="pw-field"><input type="password" id="authPassword" required autocomplete="current-password"><button type="button" class="pw-toggle" data-target="authPassword" aria-label="Afficher le mot de passe">Afficher</button></div>
     </label>
-    <p class="pw-strength" id="authPwStrength"></p>
+    <p class="pw-strength" id="authPwStrength" aria-live="polite"></p>
     <label id="authPasswordConfirmField" hidden>Confirmer le mot de passe
-      <div class="pw-field"><input type="password" id="authPasswordConfirm" minlength="8"><button type="button" class="pw-toggle" data-target="authPasswordConfirm">Afficher</button></div>
+      <div class="pw-field"><input type="password" id="authPasswordConfirm" autocomplete="new-password"><button type="button" class="pw-toggle" data-target="authPasswordConfirm" aria-label="Afficher le mot de passe">Afficher</button></div>
+    </label>
+    <label class="check-row" id="termsField" hidden>
+      <input type="checkbox" id="authTerms">
+      <span>J'ai au moins 15 ans (ou l'accord d'un parent) et j'accepte les <a href="cgu.html" target="_blank" rel="noopener">conditions d'utilisation</a> et la <a href="confidentialite.html" target="_blank" rel="noopener">politique de confidentialité</a>.</span>
     </label>
     <button type="submit" class="dl-btn" id="authSubmitBtn">Se connecter</button>
+    <div class="form-row-links" id="authLoginLinks"><a href="#/mot-de-passe-oublie">Mot de passe oublié ?</a></div>
   </form>
-  <p class="form-note" id="authNote">Connexion à ton compte SixteenMarket.</p>
+  <p class="form-note" id="authNote" role="status" aria-live="polite">Connexion à ton compte SixteenMarket.</p>
+  <p id="resendWrap" hidden><button type="button" class="link-btn" id="resendBtn">Renvoyer l'email de confirmation</button></p>
+</section>
+
+<section class="screen" id="screen-mot-de-passe-oublie">
+  <div class="deco rect dx11" aria-hidden="true"></div>
+  <div class="deco oval dx12" aria-hidden="true"></div>
+  <h1 class="screen-title" id="t-mot-de-passe-oublie" tabindex="-1">Mot de passe oublié</h1>
+  <p class="lead muted">Entre l'email de ton compte. Si un compte existe, tu recevras un lien pour choisir un nouveau mot de passe.</p>
+  <form class="auth-form" id="forgotForm">
+    <label>Email<input type="email" id="forgotEmail" required autocomplete="email" inputmode="email"></label>
+    <button type="submit" class="dl-btn" id="forgotBtn">Envoyer le lien</button>
+  </form>
+  <p class="form-note" id="forgotNote" role="status" aria-live="polite"></p>
+  <p><a class="back-link" href="#/connexion">← Retour à la connexion</a></p>
+</section>
+
+<section class="screen" id="screen-nouveau-mot-de-passe">
+  <div class="deco rect dx11" aria-hidden="true"></div>
+  <div class="deco oval dx12" aria-hidden="true"></div>
+  <h1 class="screen-title" id="t-nouveau-mot-de-passe" tabindex="-1">Nouveau mot de passe</h1>
+  <p class="lead muted">Choisis un nouveau mot de passe pour ton compte.</p>
+  <form class="auth-form" id="recoveryForm">
+    <label>Nouveau mot de passe
+      <div class="pw-field"><input type="password" id="recoveryPassword" required autocomplete="new-password"><button type="button" class="pw-toggle" data-target="recoveryPassword" aria-label="Afficher le mot de passe">Afficher</button></div>
+    </label>
+    <p class="pw-strength" id="recoveryPwStrength" aria-live="polite"></p>
+    <label>Confirmer le mot de passe
+      <div class="pw-field"><input type="password" id="recoveryPasswordConfirm" required autocomplete="new-password"><button type="button" class="pw-toggle" data-target="recoveryPasswordConfirm" aria-label="Afficher le mot de passe">Afficher</button></div>
+    </label>
+    <button type="submit" class="dl-btn" id="recoveryBtn">Enregistrer le mot de passe</button>
+  </form>
+  <p class="form-note" id="recoveryNote" role="status" aria-live="polite"></p>
 </section>
 
 <section class="screen" id="screen-admin">
-  <div class="deco square" style="width:38px;height:38px;background:var(--amber);bottom:18px;right:4%;animation-delay:1.4s;"></div>
-  <div id="adminLocked">
-    <h2 class="screen-title">Admin</h2>
-    <p>Accès réservé au compte propriétaire du site. Connecte-toi avec cet email pour gérer les apps et la communauté.</p>
+  <div class="deco square dx13" aria-hidden="true"></div>
+  <h1 class="screen-title" id="t-admin" tabindex="-1">Espace admin</h1>
+
+  <div class="admin-block">
+    <h2 id="adminFormTitle">Ajouter une app</h2>
+    <div class="admin-editing" id="adminEditing" hidden>
+      <span>Modification de <strong id="adminEditingName"></strong> — laisse un fichier vide pour le conserver.</span>
+      <button type="button" class="mini-btn" id="adminCancelEdit">Annuler la modification</button>
+    </div>
+    <form id="addAppForm" class="admin-form">
+      <input type="text" id="newAppName" aria-label="Nom de l'app" placeholder="Nom de l'app" required maxlength="80">
+      <input type="text" id="newAppDesc" aria-label="Description" placeholder="Description" required maxlength="500">
+      <input type="text" id="newAppVersion" aria-label="Version" placeholder="Version (ex : 1.0)" required maxlength="30">
+      <input type="text" id="newAppSize" aria-label="Taille" placeholder="Taille (ex : 15 Mo)" required maxlength="30">
+      <input type="text" id="newAppFormat" aria-label="Format" placeholder="Format (ex : APK)" required maxlength="30">
+      <label class="file-field">Icône (PNG, JPG, WebP ou GIF — 5 Mo max)<input type="file" id="newAppIcon" accept="image/png,image/jpeg,image/webp,image/gif"></label>
+      <label class="file-field">Captures d'écran (plusieurs images, 5 Mo max chacune)<input type="file" id="newAppScreenshots" accept="image/png,image/jpeg,image/webp,image/gif" multiple></label>
+      <label class="file-field">Fichier de l'app (APK, EXE… 50 Mo max)<input type="file" id="newAppFile" required></label>
+      <button type="submit" class="dl-btn form-wide" id="addAppBtn">Ajouter</button>
+    </form>
   </div>
-  <div id="adminUnlocked" hidden>
-    <h2 class="screen-title">Espace admin</h2>
-    <div class="admin-block">
-      <h3>Ajouter une app</h3>
-      <form id="addAppForm" class="admin-form">
-        <input type="text" id="newAppName" placeholder="Nom de l'app" required>
-        <input type="text" id="newAppDesc" placeholder="Description" required>
-        <input type="text" id="newAppVersion" placeholder="Version (ex : 1.0)" required>
-        <input type="text" id="newAppSize" placeholder="Taille (ex : 15 Mo)" required>
-        <input type="text" id="newAppFormat" placeholder="Format (ex : APK)" required>
-        <label class="file-field">Icône (image)<input type="file" id="newAppIcon" accept="image/*"></label>
-        <label class="file-field">Captures d'écran (plusieurs images)<input type="file" id="newAppScreenshots" accept="image/*" multiple></label>
-        <label class="file-field">Fichier de l'app (APK, EXE... 50 Mo max)<input type="file" id="newAppFile" required></label>
-        <button type="submit" class="dl-btn">Ajouter</button>
-      </form>
-    </div>
-    <div class="admin-block">
-      <h3>Apps existantes</h3>
-      <ul class="admin-list" id="adminAppsList"></ul>
-    </div>
-    <div class="admin-block">
-      <h3>Modération de la communauté</h3>
-      <ul class="admin-list" id="adminMessagesList"></ul>
-    </div>
+
+  <div class="admin-block">
+    <h2>Apps existantes</h2>
+    <ul class="admin-list" id="adminAppsList"></ul>
+  </div>
+  <div class="admin-block">
+    <h2>Modération de la communauté</h2>
+    <ul class="admin-list" id="adminMessagesList"></ul>
+  </div>
+  <div class="admin-block">
+    <h2>Membres bannis</h2>
+    <ul class="admin-list" id="adminBansList"></ul>
   </div>
 </section>
 
-<div class="cookie-banner" id="cookieBanner" hidden>
-  <p>Ce site utilise uniquement le stockage nécessaire à ton compte et à ta connexion — aucun cookie de suivi ni de publicité. Que tu acceptes ou non, ton expérience ici reste la même.</p>
-  <div class="cookie-actions">
-    <button class="cookie-decline" id="cookieDecline">Refuser</button>
-    <button class="dl-btn" id="cookieAccept">Accepter</button>
-  </div>
+</main>
+
+<div class="cookie-banner" id="storageNotice" role="region" aria-label="Information sur le stockage" hidden>
+  <p>Ce site n'utilise <strong>aucun cookie de suivi ni de publicité</strong> et aucun outil de mesure d'audience. Il garde seulement dans ton navigateur ce qui est nécessaire à ta connexion. <a href="confidentialite.html#stockage">En savoir plus</a></p>
+  <div class="cookie-actions"><button type="button" class="dl-btn" id="noticeOk">Compris</button></div>
 </div>
+
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+<dialog id="confirmDialog" aria-labelledby="confirmMsg">
+  <form method="dialog" class="dlg">
+    <p id="confirmMsg"></p>
+    <div class="dlg-actions">
+      <button type="submit" value="cancel" class="ghost-btn">Annuler</button>
+      <button type="submit" value="ok" class="dl-btn" id="confirmOk">Confirmer</button>
+    </div>
+  </form>
+</dialog>
 
 <footer>
   <span class="slogan-draw" id="footerSlogan">16 lettres avant, une idée après.</span>
+  <nav class="footer-links" aria-label="Informations légales">
+    <a href="mentions-legales.html">Mentions légales</a>
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="cgu.html">Conditions d'utilisation</a>
+    <a href="confidentialite.html#stockage">Cookies et stockage</a>
+    <a href="#/compte" id="footerData">Mes données</a>
+  </nav>
+  <p class="footer-small">© 2026 SixteenMarket</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script>
-(function(){
-  console.log('SixteenMarket — build 2026-08-29 (corrections sécurité)');
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var pointerFine = window.matchMedia('(pointer: fine)').matches;
-  var pendingRedirect = null;
-  var currentScreen = 'accueil';
-
-  var state = {
-    loggedIn:false, isAdmin:false, pseudo:'', email:'',
-    apps:[],
-    chatMessages:[]
-  };
-
-  var gradients = [
-    'linear-gradient(135deg,var(--turquoise),var(--violet))',
-    'linear-gradient(135deg,var(--coral),var(--amber))',
-    'linear-gradient(135deg,var(--violet),var(--coral))',
-    'linear-gradient(135deg,var(--amber),var(--turquoise))',
-    'linear-gradient(135deg,var(--turquoise),var(--coral))'
-  ];
-
-  function escapeHtml(str){
-    return String(str===null||str===undefined?'':str).replace(/[&<>"']/g, function(c){
-      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
-    });
-  }
-
-  var overlay = document.getElementById('pageTransition');
-  var overlaySvg = overlay.querySelector('svg');
-  var overlayPath = overlay.querySelector('path');
-
-  function playTransition(color, onMid){
-    if(reduce){ onMid(); return; }
-    overlayPath.style.fill = color;
-    overlay.style.transition = 'opacity .1s linear';
-    overlay.style.opacity = '1';
-    overlaySvg.style.transition = 'transform .5s cubic-bezier(.5,0,.25,1)';
-    overlaySvg.style.transform = 'translateX(0%)';
-    setTimeout(function(){
-      onMid();
-      overlay.style.transition = 'opacity .45s ease';
-      overlay.style.opacity = '0';
-      setTimeout(function(){
-        overlaySvg.style.transition = 'none';
-        overlaySvg.style.transform = 'translateX(-115%)';
-      },460);
-    },500);
-  }
-
-  function goToScreen(name){
-    if(name===currentScreen) return;
-    var accents = {accueil:'var(--turquoise-deep)',apps:'var(--turquoise-deep)',fiche:'var(--turquoise-deep)',communaute:'var(--coral-deep)',parametres:'var(--violet-deep)',connexion:'var(--amber-deep)',admin:'var(--ink)'};
-    playTransition(accents[name]||'var(--coral-deep)', function(){
-      document.querySelectorAll('.screen').forEach(function(s){ s.classList.remove('active'); });
-      var target = document.getElementById('screen-'+name);
-      if(target) target.classList.add('active');
-      document.querySelectorAll('.nav-link').forEach(function(l){ l.classList.toggle('active', l.getAttribute('data-screen')===name); });
-      window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});
-      currentScreen = name;
-      if(name==='apps') renderApps();
-      if(name==='communaute') renderCommunaute();
-      if(name==='parametres') renderParametres();
-      if(name==='admin') renderAdmin();
-    });
-  }
-
-  document.addEventListener('click', function(e){
-    var el = e.target.closest('[data-screen]');
-    if(!el) return;
-    e.preventDefault();
-    if(el.getAttribute('data-screen')==='connexion' && el.hasAttribute('data-redirect')){
-      pendingRedirect = el.getAttribute('data-redirect');
-    }
-    goToScreen(el.getAttribute('data-screen'));
-  });
-
-  function renderApps(){
-    var grid = document.getElementById('appsGrid');
-    var q = (document.getElementById('appSearch').value||'').toLowerCase();
-    var list = state.apps.filter(function(a){ return a.name.toLowerCase().indexOf(q)>-1 || (a.description||'').toLowerCase().indexOf(q)>-1; });
-    grid.innerHTML = list.map(function(a){
-      var i = state.apps.indexOf(a);
-      var iconHtml = a.icon_url
-        ? '<div class="app-icon" style="background-image:url(\''+encodeURI(a.icon_url)+'\');background-size:cover;background-position:center;"></div>'
-        : '<div class="app-icon" style="background:'+gradients[i%gradients.length]+'"></div>';
-      return '<button class="app-tile" data-open-app="'+escapeHtml(a.id)+'">'+
-        iconHtml+
-        '<div class="app-info"><h3>'+escapeHtml(a.name)+'</h3><p>'+escapeHtml(a.description)+'</p></div>'+
-      '</button>';
-    }).join('');
-  }
-  document.getElementById('appSearch').addEventListener('input', renderApps);
-  document.getElementById('appsGrid').addEventListener('click', function(e){
-    var tile = e.target.closest('[data-open-app]');
-    if(tile) openFiche(tile.getAttribute('data-open-app'));
-  });
-
-  var currentFicheApp = null;
-  var currentShotIndex = 0;
-
-  function renderFicheViewer(){
-    var app = currentFicheApp;
-    if(!app) return;
-    var idx = state.apps.indexOf(app);
-    var shots = (app.screenshots && app.screenshots.length) ? app.screenshots : null;
-    var main = document.getElementById('ssMain');
-    if(shots){
-      main.style.backgroundImage = "url('"+encodeURI(shots[currentShotIndex].url)+"')";
-    } else if(app.icon_url){
-      main.style.backgroundImage = "url('"+encodeURI(app.icon_url)+"')";
-    } else {
-      main.style.backgroundImage = 'none';
-      main.style.background = gradients[idx%gradients.length];
-    }
-    var nav = shots && shots.length > 1;
-    document.getElementById('ssPrev').hidden = !nav;
-    document.getElementById('ssNext').hidden = !nav;
-    var dots = document.getElementById('ssDots');
-    if(nav){
-      dots.hidden = false;
-      dots.innerHTML = shots.map(function(s,i){
-        return '<button type="button" class="ss-dot'+(i===currentShotIndex?' active':'')+'" data-idx="'+i+'" aria-label="Aperçu '+(i+1)+'"></button>';
-      }).join('');
-    } else {
-      dots.hidden = true;
-      dots.innerHTML = '';
-    }
-  }
-  function openFiche(id){
-    var app = state.apps.find(function(a){ return a.id===id; });
-    if(!app) return;
-    currentFicheApp = app;
-    currentShotIndex = 0;
-    var dlHtml = app.file_url
-      ? '<a class="dl-btn" id="ficheDlBtn" href="'+escapeHtml(encodeURI(app.file_url))+'" download data-app-id="'+escapeHtml(app.id)+'">Télécharger</a>'
-      : '<span class="dl-btn" style="opacity:.5;cursor:default;">Fichier indisponible</span>';
-    document.getElementById('ficheContent').innerHTML =
-      '<div class="ss-viewer">'+
-        '<div class="ss-main" id="ssMain"></div>'+
-        '<button type="button" class="ss-nav ss-prev" id="ssPrev" hidden>‹</button>'+
-        '<button type="button" class="ss-nav ss-next" id="ssNext" hidden>›</button>'+
-      '</div>'+
-      '<div class="ss-dots" id="ssDots" hidden></div>'+
-      '<h2>'+escapeHtml(app.name)+'</h2><p class="fiche-desc">'+escapeHtml(app.description)+'</p>'+
-      '<div class="meta-row"><span>v'+escapeHtml(app.version)+'</span><span>'+escapeHtml(app.size)+'</span><span>'+escapeHtml(app.format)+'</span></div>'+
-      '<div class="dl-row">'+dlHtml+
-      '<span class="dl-count"><span id="ficheDlCount">'+escapeHtml(app.downloads)+'</span> téléchargements</span></div>';
-    renderFicheViewer();
-    goToScreen('fiche');
-  }
-
-  document.getElementById('ficheContent').addEventListener('click', function(e){
-    var prevBtn = e.target.closest('#ssPrev');
-    var nextBtn = e.target.closest('#ssNext');
-    var dot = e.target.closest('.ss-dot');
-    var dlBtn = e.target.closest('#ficheDlBtn[data-app-id]');
-
-    if(prevBtn || nextBtn){
-      var shots = currentFicheApp && currentFicheApp.screenshots;
-      if(shots && shots.length){
-        currentShotIndex = prevBtn
-          ? (currentShotIndex - 1 + shots.length) % shots.length
-          : (currentShotIndex + 1) % shots.length;
-        renderFicheViewer();
-      }
-      return;
-    }
-    if(dot){
-      currentShotIndex = parseInt(dot.getAttribute('data-idx'), 10) || 0;
-      renderFicheViewer();
-      return;
-    }
-    if(dlBtn){
-      var appId = dlBtn.getAttribute('data-app-id');
-      var app = state.apps.find(function(a){ return a.id===appId; });
-      if(!app) return;
-      app.downloads = (app.downloads||0) + 1;
-      var countEl = document.getElementById('ficheDlCount');
-      if(countEl) countEl.textContent = app.downloads;
-      confettiBurst(dlBtn);
-      sb.rpc('increment_downloads', { app_id: appId }).then(function(res){
-        if(res.error){
-          console.error(res.error);
-          app.downloads = Math.max((app.downloads||1) - 1, 0);
-          if(countEl) countEl.textContent = app.downloads;
-        }
-      });
-    }
-  });
-
-  function confettiBurst(btn){
-    if(reduce) return;
-    var rect = btn.getBoundingClientRect();
-    var colors = ['#5FA898','#E2896A','#A784B0','#E3AC44'];
-    for(let i=0;i<14;i++){
-      let p = document.createElement('div');
-      let size = 6+Math.random()*5;
-      p.style.position='fixed';
-      p.style.left=(rect.left+rect.width/2)+'px';
-      p.style.top=(rect.top+rect.height/2)+'px';
-      p.style.width=size+'px';p.style.height=size+'px';
-      p.style.background=colors[i%colors.length];
-      p.style.borderRadius=(Math.random()>0.5?'2px':'50%');
-      p.style.pointerEvents='none';p.style.zIndex=9999;
-      document.body.appendChild(p);
-      let angle=Math.random()*Math.PI*2, dist=60+Math.random()*70;
-      let dx=Math.cos(angle)*dist, dy=Math.sin(angle)*dist-40, rot=Math.floor(Math.random()*360);
-      let anim=p.animate([{transform:'translate(0,0) rotate(0deg)',opacity:1},{transform:'translate('+dx+'px,'+(dy+90)+'px) rotate('+rot+'deg)',opacity:0}],{duration:900+Math.random()*400,easing:'cubic-bezier(.2,.7,.4,1)'});
-      anim.onfinish=function(){ p.remove(); };
-    }
-  }
-
-  function renderChat(){
-    var box = document.getElementById('chatMessages');
-    box.innerHTML = state.chatMessages.map(function(m){
-      return '<div class="chat-bubble"><strong>'+escapeHtml(m.author)+'</strong><span>'+escapeHtml(m.text)+'</span></div>';
-    }).join('');
-    box.scrollTop = box.scrollHeight;
-  }
-  function renderCommunaute(){
-    var locked = document.getElementById('communauteLocked');
-    var unlocked = document.getElementById('communauteUnlocked');
-    if(!state.loggedIn){ locked.hidden=false; unlocked.hidden=true; return; }
-    locked.hidden=true; unlocked.hidden=false;
-    renderChat();
-  }
-  document.getElementById('chatForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    var input = document.getElementById('chatInput');
-    var text = input.value.trim();
-    if(!text) return;
-    input.value='';
-    sb.from('messages').insert({ author: state.pseudo||'Toi', author_email: state.email, text:text }).then(function(res){
-      if(res.error){ alert('Message refusé : '+res.error.message); }
-    });
-  });
-
-  function renderParametres(){
-    var locked = document.getElementById('parametresLocked');
-    var unlocked = document.getElementById('parametresUnlocked');
-    if(!state.loggedIn){ locked.hidden=false; unlocked.hidden=true; return; }
-    locked.hidden=true; unlocked.hidden=false;
-    document.getElementById('settingsEmail').textContent = state.email;
-    document.getElementById('settingsPseudo').value = state.pseudo;
-    document.getElementById('settingsNote').textContent = '';
-  }
-  document.getElementById('pseudoForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    var newPseudo = document.getElementById('settingsPseudo').value.trim();
-    var note = document.getElementById('settingsNote');
-    if(!newPseudo) return;
-    sb.auth.updateUser({ data:{ pseudo:newPseudo } }).then(function(res){
-      if(res.error){ note.style.color='var(--coral-deep)'; note.textContent='Erreur : '+res.error.message; return; }
-      state.pseudo = newPseudo;
-      var link = document.getElementById('navUserPseudo');
-      if(link) link.textContent = newPseudo;
-      note.style.color='var(--turquoise-deep)';
-      note.textContent = 'Pseudo mis à jour.';
-    });
-  });
-  document.getElementById('passwordForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    var oldPassword = document.getElementById('settingsOldPassword').value;
-    var newPassword = document.getElementById('settingsPassword').value;
-    var confirmPassword = document.getElementById('settingsPasswordConfirm').value;
-    var note = document.getElementById('settingsNote');
-    if(newPassword !== confirmPassword){
-      note.style.color = 'var(--coral-deep)';
-      note.textContent = 'Les deux nouveaux mots de passe ne correspondent pas.';
-      return;
-    }
-    if(!passwordStrengthInfo(newPassword).valid){
-      note.style.color = 'var(--coral-deep)';
-      note.textContent = 'Choisis un mot de passe plus fort (8 caractères min., majuscule, minuscule, chiffre).';
-      return;
-    }
-    note.style.color = 'var(--ink-soft)';
-    note.textContent = 'Vérification...';
-    sb.auth.signInWithPassword({ email: state.email, password: oldPassword }).then(function(checkRes){
-      if(checkRes.error){
-        note.style.color = 'var(--coral-deep)';
-        note.textContent = "L'ancien mot de passe est incorrect.";
-        return;
-      }
-      sb.auth.updateUser({ password:newPassword }).then(function(res){
-        if(res.error){ note.style.color='var(--coral-deep)'; note.textContent='Erreur : '+res.error.message; return; }
-        document.getElementById('passwordForm').reset();
-        document.getElementById('settingsPwStrength').textContent='';
-        note.style.color='var(--turquoise-deep)';
-        note.textContent='Mot de passe mis à jour.';
-      });
-    });
-  });
-
-  document.getElementById('deleteAccountForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    var password = document.getElementById('deleteAccountPassword').value;
-    var note = document.getElementById('settingsNote');
-    if(!confirm('Supprimer définitivement ton compte ? Cette action ne peut pas être annulée.')) return;
-    note.style.color = 'var(--ink-soft)';
-    note.textContent = 'Vérification...';
-    sb.auth.signInWithPassword({ email: state.email, password: password }).then(function(checkRes){
-      if(checkRes.error){
-        note.style.color = 'var(--coral-deep)';
-        note.textContent = 'Mot de passe incorrect.';
-        return;
-      }
-      sb.rpc('delete_own_account').then(function(res){
-        if(res.error){ note.style.color='var(--coral-deep)'; note.textContent='Erreur : '+res.error.message; return; }
-        alert('Ton compte a été supprimé.');
-        state.loggedIn=false; state.isAdmin=false; state.pseudo=''; state.email='';
-        document.getElementById('authNavLink').hidden=false;
-        document.getElementById('navUser').hidden=true;
-        document.getElementById('adminNavLink').hidden=true;
-        goToScreen('accueil');
-      });
-    });
-  });
-
-  document.addEventListener('click', function(e){
-    var toggle = e.target.closest('.pw-toggle');
-    if(!toggle) return;
-    var input = document.getElementById(toggle.getAttribute('data-target'));
-    if(!input) return;
-    if(input.type === 'password'){ input.type = 'text'; toggle.textContent = 'Masquer'; }
-    else{ input.type = 'password'; toggle.textContent = 'Afficher'; }
-  });
-
-  var sb = supabase.createClient('https://txbvpddpsejtfjvixdfw.supabase.co', 'sb_publishable_DzvshGmn8ev43bDoPlpnkQ_BIMINTsR', { auth: { persistSession: true } });
-  var authMode = 'login';
-
-  function applySession(session){
-    if(!session || !session.user) return;
-    state.loggedIn = true;
-    state.email = session.user.email;
-    state.pseudo = (session.user.user_metadata && session.user.user_metadata.pseudo) || session.user.email.split('@')[0];
-    // Le statut admin vient de app_metadata (défini côté serveur uniquement,
-    // impossible à modifier par l'utilisateur via updateUser) — voir le
-    // script SQL fourni à part pour la mise en place côté Supabase.
-    state.isAdmin = !!(session.user.app_metadata && session.user.app_metadata.role === 'admin');
-    document.getElementById('authNavLink').hidden = true;
-    var navUser = document.getElementById('navUser');
-    navUser.hidden = false;
-    navUser.innerHTML = '<a href="#" id="navUserPseudo" data-screen="parametres">'+escapeHtml(state.pseudo)+'</a> · <a href="#" id="logoutLink">Déconnexion</a>';
-    document.getElementById('adminNavLink').hidden = !state.isAdmin;
-    loadMessages();
-    if(state.isAdmin) renderAdmin();
-  }
-  sb.auth.getSession().then(function(res){ if(res.data && res.data.session) applySession(res.data.session); });
-
-  function passwordStrengthInfo(pw){
-    var hasLen = pw.length >= 8;
-    var hasUpper = /[A-Z]/.test(pw);
-    var hasLower = /[a-z]/.test(pw);
-    var hasNum = /[0-9]/.test(pw);
-    var hasSpecial = /[^A-Za-z0-9]/.test(pw);
-    var required = hasLen && hasUpper && hasLower && hasNum;
-    var score = [hasLen,hasUpper,hasLower,hasNum,hasSpecial].filter(Boolean).length;
-    var label, cls;
-    if(!pw){ label=''; cls=''; }
-    else if(!required){ label='Trop faible — au moins 8 caractères, avec majuscule, minuscule et chiffre.'; cls='weak'; }
-    else if(score<=4){ label='Correct.'; cls='medium'; }
-    else{ label='Mot de passe fort.'; cls='strong'; }
-    return { valid:required, label:label, cls:cls };
-  }
-  function wireStrengthField(inputId, indicatorId){
-    var input = document.getElementById(inputId);
-    var indicator = document.getElementById(indicatorId);
-    input.addEventListener('input', function(){
-      var info = passwordStrengthInfo(input.value);
-      indicator.textContent = info.label;
-      indicator.className = 'pw-strength' + (info.cls ? ' '+info.cls : '');
-    });
-  }
-  wireStrengthField('authPassword','authPwStrength');
-  wireStrengthField('settingsPassword','settingsPwStrength');
-
-  document.querySelectorAll('.auth-tab').forEach(function(tab){
-    tab.addEventListener('click', function(){
-      authMode = tab.getAttribute('data-auth-mode');
-      document.querySelectorAll('.auth-tab').forEach(function(t){ t.classList.toggle('active', t===tab); });
-      document.getElementById('pseudoField').hidden = (authMode!=='signup');
-      document.getElementById('authPasswordConfirmField').hidden = (authMode!=='signup');
-      document.getElementById('authSubmitBtn').textContent = authMode==='signup' ? 'Créer mon compte' : 'Se connecter';
-      var note = document.getElementById('authNote');
-      note.style.color = 'var(--ink-soft)';
-      note.textContent = authMode==='signup' ? "Un email de confirmation peut t'être envoyé selon la configuration du projet." : 'Connexion à ton compte SixteenMarket.';
-    });
-  });
-
-  document.getElementById('authForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    var email = document.getElementById('authEmail').value.trim();
-    var password = document.getElementById('authPassword').value;
-    var pseudo = document.getElementById('authPseudo').value.trim();
-    var note = document.getElementById('authNote');
-    var btn = document.getElementById('authSubmitBtn');
-    if(authMode==='signup' && !passwordStrengthInfo(password).valid){
-      note.style.color = 'var(--coral-deep)';
-      note.textContent = 'Choisis un mot de passe plus fort avant de créer ton compte (8 caractères min., majuscule, minuscule, chiffre).';
-      return;
-    }
-    if(authMode==='signup' && password !== document.getElementById('authPasswordConfirm').value){
-      note.style.color = 'var(--coral-deep)';
-      note.textContent = 'Les deux mots de passe ne correspondent pas.';
-      return;
-    }
-    btn.disabled = true;
-    var afterAuth = function(result){
-      btn.disabled = false;
-      if(result.error){
-        note.style.color = 'var(--coral-deep)';
-        note.textContent = 'Erreur : '+result.error.message;
-        return;
-      }
-      if(authMode==='signup' && !result.data.session){
-        note.style.color = 'var(--turquoise-deep)';
-        note.textContent = 'Compte créé ! Vérifie ta boîte mail pour confirmer, puis connecte-toi.';
-        return;
-      }
-      applySession(result.data.session);
-      var dest = pendingRedirect || 'accueil';
-      pendingRedirect = null;
-      goToScreen(dest);
-    };
-    if(authMode==='signup'){
-      sb.auth.signUp({ email:email, password:password, options:{ data:{ pseudo: pseudo || 'Membre' } } }).then(afterAuth);
-    } else {
-      sb.auth.signInWithPassword({ email:email, password:password }).then(afterAuth);
-    }
-  });
-  document.body.addEventListener('click', function(e){
-    if(e.target.id==='logoutLink'){
-      e.preventDefault();
-      sb.auth.signOut().then(function(){
-        state.loggedIn=false; state.isAdmin=false; state.pseudo=''; state.email='';
-        document.getElementById('authNavLink').hidden=false;
-        document.getElementById('navUser').hidden=true;
-        document.getElementById('adminNavLink').hidden=true;
-        goToScreen('accueil');
-      });
-    }
-  });
-
-  function renderAdmin(){
-    var locked = document.getElementById('adminLocked');
-    var unlocked = document.getElementById('adminUnlocked');
-    if(!state.isAdmin){ locked.hidden=false; unlocked.hidden=true; return; }
-    locked.hidden=true; unlocked.hidden=false;
-    document.getElementById('adminAppsList').innerHTML = state.apps.map(function(a){
-      return '<li>'+escapeHtml(a.name)+' <button class="mini-btn" data-del-app="'+escapeHtml(a.id)+'">Supprimer</button></li>';
-    }).join('');
-    document.getElementById('adminMessagesList').innerHTML = state.chatMessages.map(function(m){
-      return '<li><strong>'+escapeHtml(m.author)+'</strong> : '+escapeHtml(m.text)+' <button class="mini-btn" data-del-msg="'+escapeHtml(m.id)+'">Supprimer</button> <button class="mini-btn danger" data-ban="'+escapeHtml(m.author_email||'')+'">Bannir</button></li>';
-    }).join('');
-  }
-  var MAX_FILE_SIZE = 5 * 1024 * 1024;
-  var MAX_APP_FILE_SIZE = 50 * 1024 * 1024;
-  function validateImageFile(file){
-    if(!file) return null;
-    if(!file.type || file.type.indexOf('image/') !== 0) return "Le fichier \""+file.name+"\" n'est pas une image.";
-    if(file.size > MAX_FILE_SIZE) return "Le fichier \""+file.name+"\" dépasse 5 Mo.";
-    return null;
-  }
-  function validateAppFile(file){
-    if(!file) return "Le fichier de l'app est requis.";
-    if(file.size > MAX_APP_FILE_SIZE) return "Le fichier \""+file.name+"\" dépasse 50 Mo (limite du plan gratuit).";
-    return null;
-  }
-  function uploadAppMedia(file, folder){
-    var path = folder+'/'+Date.now()+'-'+Math.random().toString(36).slice(2)+'-'+file.name.replace(/[^a-zA-Z0-9.\-_]/g,'_');
-    return sb.storage.from('app-media').upload(path, file).then(function(res){
-      if(res.error) throw res.error;
-      return sb.storage.from('app-media').getPublicUrl(path).data.publicUrl;
-    });
-  }
-  document.getElementById('addAppForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    var form = e.target;
-    var iconFile = document.getElementById('newAppIcon').files[0];
-    var shotFiles = Array.prototype.slice.call(document.getElementById('newAppScreenshots').files);
-    var appFile = document.getElementById('newAppFile').files[0];
-
-    var filesToValidate = (iconFile ? [iconFile] : []).concat(shotFiles);
-    for(var vi=0; vi<filesToValidate.length; vi++){
-      var validationError = validateImageFile(filesToValidate[vi]);
-      if(validationError){ alert(validationError); return; }
-    }
-    var appFileError = validateAppFile(appFile);
-    if(appFileError){ alert(appFileError); return; }
-
-    var submitBtn = form.querySelector('button[type=submit]');
-    submitBtn.disabled = true;
-    var createdAppId = null;
-
-    var iconPromise = iconFile ? uploadAppMedia(iconFile, 'icons') : Promise.resolve(null);
-    var appFilePromise = uploadAppMedia(appFile, 'files');
-
-    Promise.all([iconPromise, appFilePromise]).then(function(results){
-      return sb.from('apps').insert({
-        name:document.getElementById('newAppName').value,
-        description:document.getElementById('newAppDesc').value,
-        version:document.getElementById('newAppVersion').value,
-        size:document.getElementById('newAppSize').value,
-        format:document.getElementById('newAppFormat').value,
-        icon_url:results[0],
-        file_url:results[1]
-      }).select().single();
-    }).then(function(res){
-      if(res.error) throw res.error;
-      var newApp = res.data;
-      createdAppId = newApp.id;
-      return Promise.all(shotFiles.map(function(file, i){
-        return uploadAppMedia(file, 'screenshots').then(function(url){
-          return sb.from('app_screenshots').insert({ app_id:newApp.id, url:url, position:i });
-        });
-      }));
-    }).then(function(){
-      submitBtn.disabled = false;
-      form.reset();
-      loadApps();
-    }).catch(function(err){
-      submitBtn.disabled = false;
-      var msg = 'Erreur : '+(err && err.message ? err.message : err);
-      if(createdAppId){
-        sb.from('apps').delete().eq('id', createdAppId).then(function(){ loadApps(); });
-        msg = "L'ajout a échoué en cours de route : l'app vient d'être retirée, réessaie. Détail : "+(err && err.message ? err.message : err);
-      }
-      alert(msg);
-    });
-  });
-  document.getElementById('adminAppsList').addEventListener('click', function(e){
-    var btn = e.target.closest('[data-del-app]');
-    if(!btn) return;
-    sb.from('apps').delete().eq('id', btn.getAttribute('data-del-app')).then(function(res){
-      if(res.error){ alert('Erreur : '+res.error.message); return; }
-      loadApps();
-    });
-  });
-  document.getElementById('adminMessagesList').addEventListener('click', function(e){
-    var delBtn = e.target.closest('[data-del-msg]');
-    var banBtn = e.target.closest('[data-ban]');
-    if(delBtn){
-      var msgId = delBtn.getAttribute('data-del-msg');
-      sb.from('messages').delete().eq('id', msgId).then(function(res){
-        if(res.error){ alert('Erreur : '+res.error.message); return; }
-        state.chatMessages = state.chatMessages.filter(function(m){ return m.id!==msgId; });
-        renderChat();
-        renderAdmin();
-      });
-    }
-    if(banBtn){
-      var email = banBtn.getAttribute('data-ban');
-      if(!email){ alert("Ce message n'a pas d'email associé."); return; }
-      sb.from('banned_users').insert({ email:email }).then(function(res){
-        if(res.error){ alert('Erreur : '+res.error.message); return; }
-        return sb.from('messages').delete().eq('author_email', email).then(function(res2){
-          if(res2.error){ alert('Erreur : '+res2.error.message); return; }
-          state.chatMessages = state.chatMessages.filter(function(m){ return m.author_email!==email; });
-          renderChat();
-          renderAdmin();
-        });
-      });
-    }
-  });
-
-  var wraps = document.querySelectorAll('.blob-wrap');
-  if(!reduce && wraps.length){
-    var ticking=false;
-    var updateParallax=function(){
-      var y=window.scrollY;
-      wraps.forEach(function(w){ w.style.transform='translateY('+(y*(parseFloat(w.getAttribute('data-depth'))||.1))+'px)'; });
-      ticking=false;
-    };
-    window.addEventListener('scroll', function(){ if(!ticking){ requestAnimationFrame(updateParallax); ticking=true; } }, {passive:true});
-  }
-
-  if(!reduce && pointerFine){
-    var trailColors=['#5FA898','#E2896A','#A784B0','#E3AC44'];
-    var lastTrail=0;
-    document.addEventListener('mousemove', function(e){
-      var now=Date.now();
-      if(now-lastTrail<45) return;
-      lastTrail=now;
-      var dab=document.createElement('div');
-      var s=10+Math.random()*8;
-      dab.style.position='fixed';
-      dab.style.left=(e.clientX-s/2)+'px';
-      dab.style.top=(e.clientY-s/2)+'px';
-      dab.style.width=s+'px';dab.style.height=s+'px';
-      dab.style.borderRadius='45% 55% 60% 40% / 50% 45% 55% 50%';
-      dab.style.background=trailColors[Math.floor(Math.random()*trailColors.length)];
-      dab.style.opacity='.5';dab.style.mixBlendMode='multiply';
-      dab.style.pointerEvents='none';dab.style.zIndex=9998;
-      document.body.appendChild(dab);
-      dab.animate([{transform:'scale(1)',opacity:.5},{transform:'scale(2.2)',opacity:0}],{duration:700,easing:'ease-out'}).onfinish=function(){ dab.remove(); };
-    });
-  }
-
-  var pressPalette = ['#5FA898','#E2896A','#A784B0','#E3AC44'];
-  function splatEffect(x,y,color){
-    var s = document.createElement('div');
-    var size = 46+Math.random()*24;
-    s.style.position='fixed';
-    s.style.left=(x-size/2)+'px';
-    s.style.top=(y-size/2)+'px';
-    s.style.width=size+'px';s.style.height=size+'px';
-    s.style.borderRadius='44% 56% 60% 40% / 45% 40% 60% 55%';
-    s.style.background=color;
-    s.style.opacity='.6';
-    s.style.mixBlendMode='multiply';
-    s.style.pointerEvents='none';
-    s.style.zIndex=9997;
-    document.body.appendChild(s);
-    s.animate([
-      {transform:'scale(0)',opacity:.65},
-      {transform:'scale(1.3)',opacity:.5,offset:.35},
-      {transform:'scale(1.05)',opacity:0}
-    ],{duration:520,easing:'cubic-bezier(.2,.8,.3,1)'}).onfinish=function(){ s.remove(); };
-  }
-  if(!reduce){
-    document.addEventListener('pointerdown', function(e){
-      var el = e.target.closest('button,.card,.app-tile,a,.nav-link');
-      if(!el) return;
-      splatEffect(e.clientX, e.clientY, pressPalette[Math.floor(Math.random()*pressPalette.length)]);
-    });
-  }
-
-  var footerSlogan = document.getElementById('footerSlogan');
-  if(reduce){
-    footerSlogan.classList.add('drawn');
-  } else {
-    setTimeout(function(){ footerSlogan.classList.add('drawn'); }, 700);
-  }
-
-  function loadApps(){
-    Promise.all([
-      sb.from('apps').select('*').order('created_at',{ascending:true}),
-      sb.from('app_screenshots').select('*').order('position',{ascending:true})
-    ]).then(function(results){
-      var apps = results[0].data || [];
-      var shots = results[1].data || [];
-      apps.forEach(function(a){ a.screenshots = shots.filter(function(s){ return s.app_id===a.id; }); });
-      state.apps = apps;
-      renderApps();
-      if(state.isAdmin) renderAdmin();
-    });
-  }
-  function loadMessages(){
-    sb.from('messages').select('*').order('created_at',{ascending:false}).limit(200).then(function(res){
-      state.chatMessages = (res.data || []).slice().reverse();
-      renderChat();
-      if(state.isAdmin) renderAdmin();
-    });
-  }
-  sb.channel('public:messages')
-    .on('postgres_changes', {event:'INSERT', schema:'public', table:'messages'}, function(payload){
-      state.chatMessages.push(payload.new);
-      renderChat();
-      if(state.isAdmin) renderAdmin();
-    })
-    .on('postgres_changes', {event:'DELETE', schema:'public', table:'messages'}, function(payload){
-      state.chatMessages = state.chatMessages.filter(function(m){ return m.id!==payload.old.id; });
-      renderChat();
-      if(state.isAdmin) renderAdmin();
-    })
-    .subscribe();
-
-  loadApps();
-  loadMessages();
-
-  if(!localStorage.getItem('cookieChoice')){
-    document.getElementById('cookieBanner').hidden = false;
-  }
-  function setCookieChoice(choice){
-    try{ localStorage.setItem('cookieChoice', choice); }catch(e){}
-    document.getElementById('cookieBanner').hidden = true;
-  }
-  document.getElementById('cookieAccept').addEventListener('click', function(){ setCookieChoice('accepted'); });
-  document.getElementById('cookieDecline').addEventListener('click', function(){ setCookieChoice('declined'); });
-})();
-</script>
 </body>
 </html>

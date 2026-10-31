@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sixteenmarket.github.io/sixteenmarket/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://sixteenmarket.github.io/sixteenmarket/mentions-legales.html</loc>
+    <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://sixteenmarket.github.io/sixteenmarket/confidentialite.html</loc>
+    <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://sixteenmarket.github.io/sixteenmarket/cgu.html</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
 </urlset>
